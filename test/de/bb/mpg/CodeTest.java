@@ -32,11 +32,20 @@ public class CodeTest {
     }
 
     @Test
-    void generiereAufsteigendesArray() {
+    void generiereAufsteigendesArray2() {
+        int[] erwartet = {1, 2};
+
+        assertArrayEquals(erwartet,
+                          new Generator().generiereAufsteigendesArray(2),
+                          "Das generierte Array ist nicht korrekt.");
+    }
+
+    @Test
+    void generiereAufsteigendesArray10() {
         int[] erwartet = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
         assertArrayEquals(erwartet,
-                          new Generator().generiereAufsteigendesArray(),
+                          new Generator().generiereAufsteigendesArray(10),
                           "Das generierte Array ist nicht korrekt.");
     }
 

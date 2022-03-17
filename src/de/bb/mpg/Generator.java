@@ -5,8 +5,8 @@ import java.util.List;
 
 public class Generator {
 
-    public int[] generiereAufsteigendesArray() {
-        int[] array = new int[10];
+    public int[] generiereAufsteigendesArray(int anzahl) {
+        int[] array = new int[0];
 
         // TODO: Fülle das Array gemäß der Aufgabenstellung.
 

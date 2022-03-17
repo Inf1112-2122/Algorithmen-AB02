@@ -5,13 +5,17 @@ import java.util.List;
 public class Manipulator {
 
     public void vertauscheZweiInArray(int[] array, int indexA, int indexB) {
-        // TODO: Vertausche die beiden Elemente im Array.
+        int elementA = array[indexA];
 
+        array[indexA] = array[indexB];
+        array[indexB] = elementA;
     }
 
     public void vertauscheZweiInListe(List<Integer> liste, int indexA, int indexB) {
-        // TODO: Vertausche die beiden Elemente in der Liste.
+        int elementA = liste.get(indexA);
 
+        liste.set(indexA, liste.get(indexB));
+        liste.set(indexB, elementA);
     }
 
 }

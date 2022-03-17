@@ -6,17 +6,22 @@ import java.util.List;
 public class Generator {
 
     public int[] generiereAufsteigendesArray(int anzahl) {
-        int[] array = new int[0];
+        int[] array = new int[anzahl];
 
-        // TODO: Fülle das Array gemäß der Aufgabenstellung.
+        for (int i = 0; i < anzahl; i++) {
+            array[i] = i + 1;
+        }
 
         return array;
     }
 
     public int[] generiereAbwechselndesArray() {
-        int[] array = new int[0];
+        int[] array = new int[10];
 
-        // TODO: Fülle das Array gemäß der Aufgabenstellung.
+        for (int i = 0; i < 5; i++) {
+            array[2 * i] = i + 1;
+            array[2 * i + 1] = -(i + 1);
+        }
 
         return array;
     }
@@ -24,8 +29,13 @@ public class Generator {
     public List<Integer> generiereFibonacciZahlen(int anzahl) {
         List<Integer> fiboZahlen = new ArrayList<>();
 
-        // TODO: Fülle die Liste mit den ersten "anzahl" Fibonacci-Zahlen.
-        //       Die erste Fibonacci-Folge soll mit der Zahl 1 starten.
+        for (int i = 0; i < anzahl; i++) {
+            if (i == 0 || i == 1) {
+                fiboZahlen.add(1);
+            } else {
+                fiboZahlen.add(fiboZahlen.get(i - 2) + fiboZahlen.get(i - 1));
+            }
+        }
 
         return fiboZahlen;
     }

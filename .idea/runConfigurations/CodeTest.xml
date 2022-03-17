@@ -1,0 +1,18 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="CodeTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+    <module name="Algorithmen-AB02" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="de.bb.mpg.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <option name="PACKAGE_NAME" value="de.bb.mpg" />
+    <option name="MAIN_CLASS_NAME" value="de.bb.mpg.CodeTest" />
+    <option name="METHOD_NAME" value="" />
+    <option name="TEST_OBJECT" value="class" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

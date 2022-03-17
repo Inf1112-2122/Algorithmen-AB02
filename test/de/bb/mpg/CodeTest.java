@@ -32,11 +32,29 @@ public class CodeTest {
     }
 
     @Test
+    void generiereAufsteigendesArray() {
+        int[] erwartet = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+        assertArrayEquals(erwartet,
+                          new Generator().generiereAufsteigendesArray(),
+                          "Das generierte Array ist nicht korrekt.");
+    }
+
+    @Test
+    void generiereAbwechselndesArray() {
+        int[] erwartet = {1, -1, 2, -2, 3, -3, 4, -4, 5, -5};
+
+        assertArrayEquals(erwartet,
+                          new Generator().generiereAbwechselndesArray(),
+                          "Das generierte Array ist nicht korrekt.");
+    }
+
+    @Test
     void testeErsteFiboZahl() {
         List<Integer> fiboZahlen = Arrays.asList(1);
 
         assertEquals(fiboZahlen,
-                     new ListenGenerator().generiereFibonacciZahlen(1),
+                     new Generator().generiereFibonacciZahlen(1),
                      "Erinnerung: Die erste Fibonacci-Zahl soll 1 sein.");
     }
 
@@ -45,7 +63,7 @@ public class CodeTest {
         List<Integer> fiboZahlen = Arrays.asList(1, 1);
 
         assertEquals(fiboZahlen,
-                     new ListenGenerator().generiereFibonacciZahlen(2),
+                     new Generator().generiereFibonacciZahlen(2),
                      "Die generierten Fibonacci Zahlen sind nicht korrekt.");
     }
 
@@ -54,7 +72,7 @@ public class CodeTest {
         List<Integer> fiboZahlen = Arrays.asList(1, 1, 2, 3, 5, 8, 13, 21, 34, 55);
 
         assertEquals(fiboZahlen,
-                     new ListenGenerator().generiereFibonacciZahlen(10),
+                     new Generator().generiereFibonacciZahlen(10),
                      "Die generierten Fibonacci Zahlen sind nicht korrekt.");
     }
 }
